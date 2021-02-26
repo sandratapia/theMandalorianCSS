@@ -1,0 +1,270 @@
+.mandaloriano{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    z-index: 20;
+    transform: translate(0, 12px);
+    .complete__header{
+        width: 150px;
+        height: 142px;
+        border-radius: 50% 50% 0 0;
+        background-color: grey;
+        z-index: 5;
+        .mask{
+            width: 150px;
+            height: 25px;
+            transform: translate(0, 55px);
+            border-radius: 5px 6px 0 0;
+            background-color: black;
+        }
+        .bottom__header{
+            width: 150px;
+            transform: translate(0, 55px);
+            display: flex;
+            flex-direction: row;
+            .left__circle{
+                width: 60px;
+                height: 60px;
+                background-color: rgb(206, 206, 206);
+                .circle{
+                    width: 59px; 
+                    height: 59px; 
+                    border-radius: 0 59px 0 0 ;
+                    background-color: grey;
+                }
+            }
+            .middle__circle{
+                width: 30px;
+                height: 60px;
+                background-color: black;
+            }
+            .right__circle{
+                width: 60px;
+                height: 60px;
+                background-color: rgb(206, 206, 206);
+                .circle{
+                    width: 59px; 
+                    height: 59px; 
+                    border-radius: 59px 0 0 0 ;
+                    background-color: grey;
+                }
+            }
+        }
+    }
+    .complete__body{
+        display: flex;
+        .left__arm__complete{
+            .left__arm{
+                position: relative;
+                width: 30px;
+                height: 85px;
+                border-radius: 15px 0 0 0;
+                background-color: grey;
+            }
+            .left__shoulder{
+                position: absolute;
+                width: 40px;
+                height: 20px;
+                transform: translate(-10px);
+                border-radius: 15px 0 0 0;
+                background-color: rgb(206, 206, 206);
+                z-index: 4;
+            }
+            .left__shooter{
+                position: absolute;
+                width: 10px;
+                height: 50px;
+                transform: translate(10px, 25px);
+                z-index: 6;
+                background-color: rgb(206, 206, 206);
+            }
+            .left__hand{
+                width: 20px;
+                height: 20px;
+                border-radius: 0 0 15px 15px;
+                margin: auto;
+                background-color: black;
+            }
+        }
+        .body{
+            width: 125px;
+            height: 120px;
+            background-color: grey;
+            .pentagon{
+                position: relative;
+                width: 24px;
+                box-sizing: content-box;
+                border-width: 30px 18px 0;
+                border-style: solid;
+                border-color: rgb(206, 206, 206) transparent;
+                transform: translate(0, 25px);
+            }
+            .pentagon:before {
+                content: "";
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -54px;
+                left: -18px;
+                border-width: 0 30px 25px;
+                border-style: solid;
+                border-color: transparent transparent rgb(206, 206, 206);
+            }
+            .pentagon2{
+                position: relative;
+                width: 24px;
+                box-sizing: content-box;
+                border-width: 30px 18px 0;
+                border-style: solid;
+                border-color: rgb(206, 206, 206) transparent;
+                transform: translate(65px, -5px);
+            }
+            .pentagon2:before {
+                content: "";
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -54px;
+                left: -18px;
+                border-width: 0 30px 25px;
+                border-style: solid;
+                border-color: transparent transparent rgb(206, 206, 206);;
+            }
+            .pectoral{
+                display: flex;
+                .triangle__right{
+                    width: 0;
+                    height: 0;
+                    border-top: 20px solid transparent;
+                    border-left: 45px solid rgb(206, 206, 206);
+                    border-bottom: 20px solid transparent;
+                }
+                .rectangle{
+                    width: 45px;
+                    height: 65px;
+                    background-color: rgb(206, 206, 206);
+                    transform: translate(0, -5px);
+                }
+                .triangle__left{
+                    width: 0;
+                    height: 0;
+                    border-top: 20px solid transparent;
+                    border-right: 45px solid rgb(206, 206, 206);
+                    border-bottom: 20px solid transparent;
+                }
+            }
+            .belt{
+                width: 25px;
+                height: 150px;
+                transform: translate(50px, -145px) rotate(45deg);
+                background-color: rgb(41, 41, 41);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .belt__weapon{
+                    width: 20px;
+                    height: 5px;
+                    margin-bottom: 5px;
+                    background-color: rgb(206, 206, 206);
+                    z-index: 5;
+                }
+            }
+        }
+        .right__arm__complete{
+            .right__arm{
+                position: relative;
+                width: 30px;
+                height: 85px;
+                border-radius: 0 15px 0 0;
+                background-color: grey;
+            }
+            .right__shoulder{
+                position: absolute;
+                width: 40px;
+                height: 20px;
+                border-radius: 0 15px 0 0;
+                background-color: rgb(206, 206, 206);
+                z-index: 4;
+            }
+            .right__shooter{
+                position: absolute;
+                width: 10px;
+                height: 50px;
+                transform: translate(10px, 25px);
+                z-index: 99;
+                background-color: rgb(206, 206, 206);
+            }
+            .right__hand{
+                width: 20px;
+                height: 20px;
+                border-radius: 0 0 15px 15px;
+                margin: auto;
+                background-color: black;
+            }
+        }
+
+    }
+    .complete__legs{
+        width: 125px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        .left__leg{
+            width: 35px;
+            height: 70px;
+            background-color: grey; 
+            .left__armor{
+                width: 35px; 
+                height: 17px; 
+                background-color: rgb(206, 206, 206);
+                border-radius: 0 0 35px 35px;
+            }
+            .left__foot{
+                width: 40px;
+                height: 20px;
+                background-color: black;
+                border-radius: 15px 15px 0 0;
+                transform: translate(-3px, 44px);
+            }
+        }
+        .right__leg{
+            width: 35px;
+            height: 70px;
+            background-color: grey; 
+            .right__armor{
+                width: 35px; 
+                height: 17px; 
+                background-color: rgb(206, 206, 206);
+                border-radius: 0 0 35px 35px;
+            }
+            .right__foot{
+                width: 40px;
+                height: 20px;
+                background-color: black;
+                border-radius: 15px 15px 0 0;
+                transform: translate(-3px, 44px);
+            }
+        }
+    }
+}
+
+.tossing{
+	animation-name: tossing;
+	animation-duration: 3.5s;	
+	animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-2deg);	
+	}
+	50% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(-2deg);	
+	}						
+}

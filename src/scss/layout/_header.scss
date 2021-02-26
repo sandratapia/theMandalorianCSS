@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Mandalore";
+    src: url("../fonts/mandalore.ttf");
+}
+
+.header{
+    background-color: yellow;
+    h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mandalore";
+        padding-top: 15px;
+        margin: 0;
+        .first__part{
+            font-size: 40px;
+        }
+        .second__part{
+            font-size: 120px;
+        }
+    }
+}

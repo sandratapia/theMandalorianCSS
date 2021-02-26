@@ -1,0 +1,217 @@
+.main{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: yellow;
+    flex: 0 1 auto;
+    min-height: 60vh;
+}
+
+.baby__yoda{
+    padding-top: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 17px);
+    .complete__head{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .left__ear{
+            width: 75px;
+            height: 35px;
+            margin-top: 20px;
+            transform: translate(9px) rotate(7deg);
+            border-radius: 0 0 0 80%;
+            background-color: #67a078;
+            .left__ear__inside{
+                width: 60px;
+                height: 25px;
+                transform: translate(5px, 4px);
+                border-radius: 0 0 0 80%;
+                background-color: #fce5fb;
+            }
+        }
+        .head{
+            width: 115px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #67a078;
+            .eyes{
+                width: 70px;
+                height: 23px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                transform: translate(0, 8px);
+                .left__eye{
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    background-color: black;
+                    .left__inside{
+                        .left__eye__inside1{
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 50%;
+                            transform: translate(3px, 3px);
+                            background-color: white;
+                        }
+                        .left__eye__inside2{
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            transform: translate(13.5px, 1px);
+                            background-color: white;
+                        }
+                    }
+                }
+                .right__eye{
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    background-color: black;
+                    .right__inside{
+                        .right__eye__inside1{
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 50%;
+                            transform: translate(3px, 3px);
+                            background-color: white;
+                        }
+                        .right__eye__inside2{
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            transform: translate(13.5px, 1px);
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .mouth{
+                width: 30px;
+                height: 23px;
+                border-radius: 0 0 15% 15%;
+                border-bottom: 2px solid black;
+            }
+
+        }
+        .right__ear{
+            width: 75px;
+            height: 35px;
+            margin-top: 20px;
+            transform: translate(-9px) rotate(-7deg);
+            border-radius: 0 0 80% 0;
+            background-color: #67a078;
+            .right__ear__inside{
+                width: 60px;
+                height: 25px;
+                transform: translate(6px, 4px);
+                border-radius: 0 0 83% 0;
+                background-color: #fce5fb;
+            }
+        }
+    }
+    .complete__body{
+        .neck{
+            width: 135px;
+            height: 27px;
+            margin: auto;
+            transform: translate(0, -15px);
+            border-radius: 10px;
+            background-color: #c4bfb0;
+        }
+        .body{
+            width: 120px;
+            border-right: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-bottom: 120px solid #a48068;
+            border-radius: 0 0 35% 35%;
+            margin: auto;
+            transform: translate(0, -15px);
+            position: relative;
+            .floating{
+                animation-name: floating;
+                animation-duration: 5s;	
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                position: absolute;
+                width: 130px;
+                height: 37px;
+            }
+            @keyframes floating {
+                0% {
+                    transform: translateY(-50%);	
+                }
+                50% {
+                    transform: translateY(-10%);	
+                }	
+                100% {
+                    transform: translateY(-50%);
+                }			
+            }
+            .body__inside{
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                transform: translate(-7px, 6px);
+                .left__hand{
+                    width: 45px;
+                    height: 17px;
+                    transform: translate(10px, 7px) rotate(-13deg);
+                    border-radius: 55% 0 75% 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    background-color: #c4bfb0;
+                    z-index: 5;
+                    .left__hand__inside{
+                        width: 37px;
+                        height: 17px;
+                        border-radius: 55% 0 75% 50%;
+                        background-color: #67a078;
+                    }
+                }
+                .food{
+                    width: 40px;
+                    height: 37px;
+                    border-radius: 0 0 40% 40%;
+                    background-color: #593432;
+                    z-index: 4;
+                }
+                .right__hand{
+                    width: 45px;
+                    height: 17px;
+                    transform: translate(-10px, 15px) rotate(13deg);
+                    border-radius: 0 55% 55% 75%;
+                    background-color: #c4bfb0;
+                    z-index: 5;
+                    .right__hand__inside{
+                        width: 37px;
+                        height: 17px;
+                        border-radius: 0 55% 55% 75%;
+                        background-color: #67a078;
+                    }
+                }
+            }
+            .coat__detail{
+                width: 10px;
+                height: 110px;
+                margin: auto;
+                position: absolute;
+                transform: translate(55px, 10px);
+                border-radius: 0 0 95% 0;
+                background-color: #8d6c59;
+                z-index: -1;
+            }
+        }
+    }
+}
