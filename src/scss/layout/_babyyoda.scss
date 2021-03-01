@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    background-color: yellow;
     flex: 0 1 auto;
     min-height: 60vh;
 }
@@ -16,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(0, 17px);
+    transform: translate(0, 35px);
     .complete__head{
         display: flex;
         flex-direction: row;
@@ -27,13 +26,13 @@
             margin-top: 20px;
             transform: translate(9px) rotate(7deg);
             border-radius: 0 0 0 80%;
-            background-color: #67a078;
+            background-color: $yoda-color;
             .left__ear__inside{
                 width: 60px;
                 height: 25px;
                 transform: translate(5px, 4px);
                 border-radius: 0 0 0 80%;
-                background-color: #fce5fb;
+                background-color: $yoda-ear-inside;
             }
         }
         .head{
@@ -44,7 +43,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #67a078;
+            background-color: $yoda-color;
             .eyes{
                 width: 70px;
                 height: 23px;
@@ -56,21 +55,21 @@
                     width: 23px;
                     height: 23px;
                     border-radius: 50%;
-                    background-color: black;
+                    background-color: $yoda-eye;
                     .left__inside{
                         .left__eye__inside1{
                             width: 9px;
                             height: 9px;
                             border-radius: 50%;
                             transform: translate(3px, 3px);
-                            background-color: white;
+                            background-color: $yoda-eye-inside;
                         }
                         .left__eye__inside2{
                             width: 4px;
                             height: 4px;
                             border-radius: 50%;
                             transform: translate(13.5px, 1px);
-                            background-color: white;
+                            background-color: $yoda-eye-inside;
                         }
                     }
                 }
@@ -78,21 +77,21 @@
                     width: 23px;
                     height: 23px;
                     border-radius: 50%;
-                    background-color: black;
+                    background-color: $yoda-eye;
                     .right__inside{
                         .right__eye__inside1{
                             width: 9px;
                             height: 9px;
                             border-radius: 50%;
                             transform: translate(3px, 3px);
-                            background-color: white;
+                            background-color: $yoda-eye-inside;
                         }
                         .right__eye__inside2{
                             width: 4px;
                             height: 4px;
                             border-radius: 50%;
                             transform: translate(13.5px, 1px);
-                            background-color: white;
+                            background-color: $yoda-eye-inside;
                         }
                     }
                 }
@@ -101,7 +100,7 @@
                 width: 30px;
                 height: 23px;
                 border-radius: 0 0 15% 15%;
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid $yoda-eye;
             }
 
         }
@@ -111,13 +110,13 @@
             margin-top: 20px;
             transform: translate(-9px) rotate(-7deg);
             border-radius: 0 0 80% 0;
-            background-color: #67a078;
+            background-color: $yoda-color;
             .right__ear__inside{
                 width: 60px;
                 height: 25px;
                 transform: translate(6px, 4px);
                 border-radius: 0 0 83% 0;
-                background-color: #fce5fb;
+                background-color: $yoda-ear-inside;
             }
         }
     }
@@ -128,17 +127,18 @@
             margin: auto;
             transform: translate(0, -15px);
             border-radius: 10px;
-            background-color: #c4bfb0;
+            background-color: $yoda-neck;
         }
         .body{
             width: 120px;
             border-right: 30px solid transparent;
             border-left: 30px solid transparent;
-            border-bottom: 120px solid #a48068;
+            border-bottom: 120px solid $yoda-body;
             border-radius: 0 0 35% 35%;
             margin: auto;
             transform: translate(0, -15px);
             position: relative;
+            z-index: 11;
             .floating{
                 animation-name: floating;
                 animation-duration: 5s;	
@@ -171,20 +171,20 @@
                     border-radius: 55% 0 75% 50%;
                     display: flex;
                     justify-content: flex-end;
-                    background-color: #c4bfb0;
+                    background-color: $yoda-neck;
                     z-index: 5;
                     .left__hand__inside{
                         width: 37px;
                         height: 17px;
                         border-radius: 55% 0 75% 50%;
-                        background-color: #67a078;
+                        background-color: $yoda-color;
                     }
                 }
                 .food{
                     width: 40px;
                     height: 37px;
                     border-radius: 0 0 40% 40%;
-                    background-color: #593432;
+                    background-color: $yoda-food;
                     z-index: 4;
                 }
                 .right__hand{
@@ -192,13 +192,13 @@
                     height: 17px;
                     transform: translate(-10px, 15px) rotate(13deg);
                     border-radius: 0 55% 55% 75%;
-                    background-color: #c4bfb0;
+                    background-color: $yoda-neck;
                     z-index: 5;
                     .right__hand__inside{
                         width: 37px;
                         height: 17px;
                         border-radius: 0 55% 55% 75%;
-                        background-color: #67a078;
+                        background-color: $yoda-color;
                     }
                 }
             }
@@ -209,9 +209,19 @@
                 position: absolute;
                 transform: translate(55px, 10px);
                 border-radius: 0 0 95% 0;
-                background-color: #8d6c59;
+                background-color: $yoda-coat-detail;
                 z-index: -1;
             }
         }
+    }
+    .baby__shadow{
+        position: absolute;
+        background-color:black;
+        opacity: 0.5;
+        width: 160px;
+        height: 30px;
+        transform: translate(0, 110px);
+        border-radius: 50%;
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
     }
 }
