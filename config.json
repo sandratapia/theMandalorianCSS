@@ -30,9 +30,14 @@
     "dist": "docs/assets/js/"
   },
   "images": {
-    "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}",
+    "src": ["src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}"],
     "dest": "public/assets/images/",
     "dist": "docs/assets/images/"
+  },
+  "fonts": {
+    "src": "src/fonts/**/*.ttf",
+    "dest": "public/assets/fonts/",
+    "dist": "docs/assets/fonts/"
   },
   "watch": {
     "html": "src/**/*.html"
